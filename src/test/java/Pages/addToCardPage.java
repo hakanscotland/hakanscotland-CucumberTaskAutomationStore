@@ -12,65 +12,33 @@ public class addToCardPage{
 
     }
 
-    @FindBy(xpath="//*[@id='block_top_menu']/ul/li[3]/a")
-    public WebElement tShirtButton;
+    @FindBy(linkText="MEN")
+    public WebElement menButton;
 
-    @FindBy(xpath="//*[@id='center_column']/ul/li")
-    public WebElement Faded_Short_Sleeve;
+    @FindBy(xpath="/html//div[@id='maincontainer']//div[@class='contentpanel']/ul/li[2]/div/a[@href='https://automationteststore.com/index.php?rt=product/category&path=58_59']")
+    public WebElement fragranceSet;
 
-    @FindBy(id="group_1")
-    public static WebElement SelectSize;
+    @FindBy(css="a[title='Armani Code after shave balm']")
+    public static WebElement armaniCodeAdd;
 
-    @FindBy(name = "Blue")
-    public WebElement FadedTshirtColor;
+    @FindBy(linkText = "Add to Cart")
+    public WebElement addToCart;
 
-    @FindBy(name = "Submit")
-    public WebElement addToCartButton;
 
-   @FindBy(xpath=" //*[@id='layer_cart']/div[1]/div[2]/div[4]/span")
-    public WebElement ContinueButton;
-
-    @FindBy(xpath="//*[@id='block_top_menu']/ul/li[2]/a")
-    public WebElement DressesTab;
-
-    @FindBy(xpath="//*[@id='subcategories']/ul/li[2]/div[1]/a")
-    public WebElement EveningDressesTab;
-
-    @FindBy(id="group_1")
-    public static WebElement SelectSizeEveningDress;
-
-    @FindBy(xpath = " //*[@id='center_column']/ul/li")
-    public WebElement EveningPrintedDresses;
-
-    @FindBy(name = "Beige")
-    public WebElement PrintedTshirtColor;
-
-    @FindBy(xpath="//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[1]")
-    public WebElement PrintedSummerDress;
-
-    @FindBy(name = "Orange")
-    public WebElement PrintedSummerDressColor;
-
-    @FindBy(xpath = "//*[@id=\'layer_cart\']/div[1]/div[2]/div[4]/a/span")
-    public WebElement ProceedToCheckoutButton;
-
-    @FindBy(id="4_16_0_0")
-    public WebElement RemoveButtonEveningDress;
-
-    @FindBy(xpath="//*[@id='cart_quantity_up_1_4_0_0']/span/i")
-    public WebElement AddButtonFadedShortSleeve;
-
-    @FindBy(xpath = "//*[@id='header']/div[3]/div/div/div[3]/div/a")
-    public WebElement ViewCart;
-
-    @FindBy(xpath="//*[@id='product_5_25_0_0']/td[6]")
+    @FindBy(xpath="/html//table[@id='totals_table']/tbody/tr[1]/td[2]")
     public WebElement CartFistLineTotal;
 
-    @FindBy(xpath="/html/body/div/div[2]/div/div[3]/div/div[2]/table/tbody/tr[2]/td[6]")
+    @FindBy(xpath="/html//table[@id='totals_table']/tbody/tr[2]/td[2]")
     public WebElement CartSecondTotal;
 
-    @FindBy(xpath="//*[@id='total_price']")
+    @FindBy(xpath="/html//table[@id='totals_table']//span[@class='bold totalamout']")
     public WebElement CartTotal;
+
+    @FindBy(linkText = "Continue Shopping")
+    public WebElement continueShopping;
+
+
+
 
 
 }

@@ -12,6 +12,7 @@ import io.cucumber.junit.CucumberOptions;
         features = "src/test/resources/features",
         glue = "Step_Definitions",
         dryRun = false,
+		publish = true,
         plugin = "json:target/cucumber.json"
 
 )
